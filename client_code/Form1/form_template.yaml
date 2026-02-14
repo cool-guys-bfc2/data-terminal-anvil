@@ -1,0 +1,23 @@
+components_by_slot:
+  content:
+  - layout_properties: {}
+    name: query
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextArea
+  - event_bindings: {}
+    layout_properties: {}
+    name: submit
+    properties: {align: left, text: Run}
+    type: form:dep_lin1x4oec0ytd:_Components.Button
+  - data_bindings: []
+    event_bindings: {}
+    layout_properties: {}
+    name: connect
+    properties: {label: Connection string…}
+    type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
+  - layout_properties: {}
+    name: output
+    properties: {background: 'theme:On Primary Container', content: Output, enable_slots: false, foreground: 'theme:Primary Container', role: null}
+    type: RichText
+is_package: true
+layout: {type: 'form:dep_lin1x4oec0ytd:Layouts.NavigationRailLayout'}
