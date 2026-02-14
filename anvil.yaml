@@ -11,6 +11,7 @@ native_deps: null
 package_name: Data_terminal
 runtime_options:
   client_version: '3'
+  legacy_features: {bootstrap3: true}
   server_spec: {base: python310-minimal}
   version: 3
 services:
