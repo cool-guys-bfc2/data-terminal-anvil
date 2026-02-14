@@ -1,0 +1,16 @@
+components:
+- layout_properties: {slot: default}
+  name: form1_1
+  properties: {}
+  type: form:Form1
+container:
+  properties:
+    html: |-
+      <center style="font-style:italic; color:#888; margin: 3em;">
+        <div class="gtranslate_wrapper"></div>
+        <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","es","fr","de","gd","hi","ca","ru","ro","tl","iw","pt","pl","id","lv","ko","no","lt","sr","ja","it","el","sk","sv","uk","sl","vi","sq"],"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
+        <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+      </center>
+      <div anvil-slot="default"></div>
+  type: HtmlTemplate
+is_package: false
