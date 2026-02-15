@@ -2,7 +2,7 @@ components_by_slot:
   content:
   - layout_properties: {}
     name: query
-    properties: {}
+    properties: {label: SQL code, placeholder: SELECT * FROM users;, role: code}
     type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextArea
   - event_bindings: {}
     layout_properties: {}
@@ -13,7 +13,7 @@ components_by_slot:
     event_bindings: {}
     layout_properties: {}
     name: connect
-    properties: {label: Connection string…}
+    properties: {label: Connection string…, role: code}
     type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
   - layout_properties: {}
     name: output
@@ -27,7 +27,7 @@ components_by_slot:
       enable_slots: false
       foreground: theme:Primary Container
       format: restricted_html
-      role: null
+      role: code
     type: RichText
   navigation:
   - layout_properties: {}

@@ -47,4 +47,5 @@ color_scheme:
   - {color: 'rgba(25,28,29, 0.08)', name: Inverse On Surface Overlay 1}
   - {color: 'rgba(25,28,29, 0.12)', name: Inverse On Surface Overlay 2}
   preset_groups: []
-roles: []
+roles:
+- {components: null, name: code}

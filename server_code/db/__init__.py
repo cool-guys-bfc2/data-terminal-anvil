@@ -4,9 +4,9 @@ from psycopg2.extras import RealDictCursor
 
 # Get connection string from Anvil Secrets
 @anvil.server.callable
-def getconn():
+def getconn(x='conn'):
   try:
-    x=anvil.server.cookies.shared['conn']
+    x=anvil.server.cookies.shared[x]
   except:
     x=''
   if x:
@@ -15,8 +15,8 @@ def getconn():
     return ''
     
 @anvil.server.callable
-def conn(x):
-  anvil.server.cookies.shared['conn']=x
+def conn(x,y='conn'):
+  anvil.server.cookies.shared[y]=x
 
 def get_connection(x):
   # SSL mode 'require' is mandatory for Neon

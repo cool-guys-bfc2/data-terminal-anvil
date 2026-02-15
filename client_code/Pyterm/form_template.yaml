@@ -1,8 +1,9 @@
 components_by_slot:
   content:
-  - layout_properties: {}
+  - event_bindings: {}
+    layout_properties: {}
     name: code
-    properties: {}
+    properties: {error: false, height: 250, role: code, subcontent_color: 'theme:Primary Container', supporting_text: Write python code to run, tooltip: Python here…}
     type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextArea
   - event_bindings: {}
     layout_properties: {}
@@ -11,7 +12,21 @@ components_by_slot:
     type: form:dep_lin1x4oec0ytd:_Components.Button
   - layout_properties: {}
     name: output
-    properties: {format: plain_text}
+    properties: {format: plain_text, role: code}
     type: RichText
+  - layout_properties: {}
+    name: text_1
+    properties: {role: code}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - event_bindings: {}
+    layout_properties: {}
+    name: timer_1
+    properties: {interval: 0.05}
+    type: Timer
+  sidesheet:
+  - layout_properties: {}
+    name: linear_progress_indicator_1
+    properties: {progress: 70, progress_color: 'theme:Primary', role: code, track_color: '', type: indeterminate}
+    type: form:dep_lin1x4oec0ytd:_Components.LinearProgressIndicator
 is_package: true
 layout: {type: 'form:dep_lin1x4oec0ytd:Layouts.NavigationRailLayout'}
