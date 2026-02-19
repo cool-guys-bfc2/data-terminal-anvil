@@ -1,0 +1,26 @@
+components_by_slot:
+  content:
+  - layout_properties: {}
+    name: text_area_1
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextArea
+  - layout_properties: {}
+    name: dropdown_menu_1
+    properties:
+      align: right
+      items: [restricted_html, markdown, plain_text]
+    type: form:dep_lin1x4oec0ytd:_Components.DropdownMenu
+  - data_bindings:
+    - {code: self.text_area_1.text, property: content, writeback: false}
+    - {code: self.dropdown_menu_1.selected_value, property: format, writeback: false}
+    layout_properties: {}
+    name: rich_text_1
+    properties: {}
+    type: RichText
+  - event_bindings: {}
+    layout_properties: {}
+    name: timer_1
+    properties: {}
+    type: Timer
+is_package: true
+layout: {type: 'form:dep_lin1x4oec0ytd:Layouts.NavigationRailLayout'}

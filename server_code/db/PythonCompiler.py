@@ -23,3 +23,7 @@ def execute(rc,env={}):
 @anvil.server.route('/python')
 def pyterm():
   return anvil.server.FormResponse('Pyterm')
+
+@anvil.server.route('/html')
+def html():
+  return anvil.server.FormResponse('Richtext')
