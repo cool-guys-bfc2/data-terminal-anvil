@@ -9,6 +9,8 @@ class Form1(Form1Template):
     self.init_components(**properties)
     x=anvil.server.call_s('getconn')
     self.connect.text=x
+    y='Pending' in anvil.server.call_s('getconn','status')
+    self.navigation_link_1.badge=y
     # Any code you write here will run before the form opens.
 
   @handle("submit", "click")
