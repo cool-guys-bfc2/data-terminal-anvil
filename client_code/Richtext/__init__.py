@@ -3,7 +3,6 @@ from anvil import *
 import anvil.server
 import m3.components as m3
 
-
 class Richtext(RichtextTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -34,7 +33,7 @@ class Richtext(RichtextTemplate):
   def dropdown_menu_1_change(self, **event_args):
     """This method is called when an item is selected"""
     anvil.server.call_s('conn',self.dropdown_menu_1.selected_value,"html.format")
-
+    self,self.button_1_click()
   @handle("button_1", "click")
   def button_1_click(self, **event_args):
     self.refresh_data_bindings()
