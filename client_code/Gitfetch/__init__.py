@@ -16,15 +16,14 @@ class Gitfetch(GitfetchTemplate):
     """This method is called when the component is clicked."""
     x=anvil.server.call_s('fetch',self.text_area_1.text)
     y=[]
+    print(x)
     for i in x:
-      try:
-        y.append('<h1>'+i['description']+'</h1>')
+      if True:
+        y.append('<h1>'+'New repo'+'</h1>')
         for k in i:
           v=i[k]
           if k!='description':
             y.append(str(k)+'='+str(v))
-      except:
-        pass
     ind=0
     for i in y:
       if not i:
