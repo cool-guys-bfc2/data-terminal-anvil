@@ -9,6 +9,8 @@ class Richtext(RichtextTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.text_area_1.text=anvil.server.call_s('getconn','html.index')
+    self.dropdown_menu_1.selected_value=anvil.server.call_s("getconn","html.format")
+    
     # Any code you write here will run before the form opens.
 
   @handle("timer_1", "tick")
@@ -20,4 +22,9 @@ class Richtext(RichtextTemplate):
   def text_area_1_change(self, **event_args):
     """This method is called when the text in this component is edited."""
     x=self.text_area_1.text
-    anvil.server.call_s('conn',x)
+    anvil.server.call_s('conn',x,'html.index')
+
+  @handle("dropdown_menu_1", "change")
+  def dropdown_menu_1_change(self, **event_args):
+    """This method is called when an item is selected"""
+    anvil.server.call_s('conn',self.dropdown_menu_1.selected_value,"html.format")
