@@ -1,6 +1,7 @@
 components_by_slot:
   content:
-  - layout_properties: {}
+  - event_bindings: {}
+    layout_properties: {}
     name: text_area_1
     properties: {}
     type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextArea
