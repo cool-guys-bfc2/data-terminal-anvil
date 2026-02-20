@@ -10,8 +10,13 @@ components_by_slot:
     name: dropdown_menu_1
     properties:
       align: right
-      items: [restricted_html, markdown, plain_text]
+      items: [restricted_html, markdown, javascript, plain_text]
     type: form:dep_lin1x4oec0ytd:_Components.DropdownMenu
+  - event_bindings: {}
+    layout_properties: {}
+    name: button_1
+    properties: {icon: 'mi:code_blocks', text: Run code}
+    type: form:dep_lin1x4oec0ytd:_Components.Button
   - data_bindings:
     - {code: self.text_area_1.text, property: content, writeback: false}
     - {code: self.dropdown_menu_1.selected_value, property: format, writeback: false}
