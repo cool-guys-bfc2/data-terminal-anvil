@@ -17,3 +17,7 @@ def fetch(u):
   x=requests.get('https://v1.nocodeapi.com/bfcomics/github/gYLKaAnlBYFADiBX/repos?username='+u)
   y=x.json()
   return y
+
+@anvil.server.route('/git')
+def git():
+  return anvil.server.FormResponse('Gitfetch')
