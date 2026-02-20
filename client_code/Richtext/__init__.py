@@ -16,6 +16,11 @@ class Richtext(RichtextTemplate):
   @handle("timer_1", "tick")
   def timer_1_tick(self, **event_args):
     """This method is called Every [interval] seconds. Does not trigger if [interval] is 0."""
+    text=self.text_area_1.text
+    text = text.replace('“', '"').replace('”', '"') # Double quotes
+    text = text.replace('‘', "'").replace('’', "'") # Single quotes
+    c=text
+    self.text_area_1.text=c
     if self.dropdown_menu_1.selected_value not in ['javascript']:
       self.refresh_data_bindings()
 
